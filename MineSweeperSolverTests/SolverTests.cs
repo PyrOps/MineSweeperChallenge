@@ -54,5 +54,13 @@ namespace MineSweeperSolver.Tests {
       bool expectedOutput = true;
       Assert.AreEqual(expectedOutput, solver.CharIsDot(input[0]));
     }
+
+    [TestMethod()]
+    public void CountNbLinesTest() {
+      Solver solver = new();
+      string input = ".*.**.\n....*.\n..*...";
+      int expectedOutput = 3;
+      Assert.AreEqual(expectedOutput, solver.CountNbLines(input));
+    }
   }
 }

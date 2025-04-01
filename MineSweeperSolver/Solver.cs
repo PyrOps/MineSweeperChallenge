@@ -21,5 +21,9 @@ namespace MineSweeperSolver {
     public bool CharIsDot(char c) {
       return c == '.';
     }
+
+    public int CountNbLines(string grid) {
+      throw new NotImplementedException();
+    }
   }
 }
