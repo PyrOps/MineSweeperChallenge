@@ -26,31 +26,31 @@ namespace MineSweeperSolver.Tests {
     [TestMethod()]
     public void TwoByTwoGridOneMineSolveTest() {
       Solver solver = new();
-      string input = ".*\r\n..";
-      string expectedOutput = "1*\r\n11";
+      string input = ".*\n..";
+      string expectedOutput = "1*\n11";
       Assert.AreEqual(expectedOutput, solver.Solve(input));
     }
 
     [TestMethod()]
     public void TwoByTwoGridTwoMinesSolveTest() {
       Solver solver = new();
-      string input = ".*\r\n.*";
-      string expectedOutput = "2*\r\n2*";
+      string input = ".*\n.*";
+      string expectedOutput = "2*\n2*";
       Assert.AreEqual(expectedOutput, solver.Solve(input));
     }
 
     [TestMethod()]
     public void ExampleGridSolveTest() {
       Solver solver = new();
-      string input = ".*.**.\r\n....*.\r\n..*...";
-      string expectedOutput = "1*2**1\r\n1234*2\r\n01*211";
+      string input = ".*.**.\n....*.\n..*...";
+      string expectedOutput = "1*2**1\n1234*2\n01*211";
       Assert.AreEqual(expectedOutput, solver.Solve(input));
     }
 
     [TestMethod()]
     public void CharIsDotTest() {
       Solver solver = new();
-      string input = ".*.**.\r\n....*.\r\n..*...";
+      string input = ".*.**.\n....*.\n..*...";
       bool expectedOutput = true;
       Assert.Equals(expectedOutput, solver.CharIsDot(input[0]));
     }
