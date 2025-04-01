@@ -38,5 +38,13 @@ namespace MineSweeperSolver.Tests {
       string expectedOutput = "2*\r\n2*";
       Assert.AreEqual(expectedOutput, solver.Solve(input));
     }
+
+    [TestMethod()]
+    public void ExampleGridSolveTest() {
+      Solver solver = new();
+      string input = ".*.**.\r\n....*.\r\n..*...";
+      string expectedOutput = "1*2**1\r\n1234*2\r\n01*211";
+      Assert.AreEqual(expectedOutput, solver.Solve(input));
+    }
   }
 }
