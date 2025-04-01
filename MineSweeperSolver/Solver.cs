@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MineSweeperSolver {
   public class Solver {
-    public string Solve(string input) {
+    public string Solve(string grid) {
       /*
        *  input   |   expected output
        *  .*      |   1*
@@ -23,7 +23,7 @@ namespace MineSweeperSolver {
        */
       //Solution for test #1
       //return "1*\r\n11";
-      return input.Equals(".*\r\n..") ? "1*\r\n11" : "2*\r\n2*";
+      return grid.Equals(".*\r\n..") ? "1*\r\n11" : "2*\r\n2*";
     }
   }
 }
