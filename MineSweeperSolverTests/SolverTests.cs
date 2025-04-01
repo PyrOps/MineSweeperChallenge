@@ -52,7 +52,7 @@ namespace MineSweeperSolver.Tests {
       Solver solver = new();
       string input = ".*.**.\n....*.\n..*...";
       bool expectedOutput = true;
-      Assert.Equals(expectedOutput, solver.CharIsDot(input[0]));
+      Assert.AreEqual(expectedOutput, solver.CharIsDot(input[0]));
     }
   }
 }
