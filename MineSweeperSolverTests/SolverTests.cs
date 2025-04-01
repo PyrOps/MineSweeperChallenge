@@ -40,5 +40,14 @@ namespace MineSweeperSolver.Tests {
       Solver solver = new();
       Assert.AreEqual(expectedResult, solver.CharIsDot(grid[0]));
     }
+
+    [DataTestMethod]
+    [DataRow("01*10", 2, "02*20")]
+    [DataRow("01**4", 0, "02**4")]
+    [DataRow("01**4", 1, "11**4")]
+    public void UpdateRow(string row, int colIndex, string expectedResult) {
+      Solver solver = new();
+      Assert.AreEqual(expectedResult, solver.UpdateRow(row, colIndex));
+    }
   }
 }
