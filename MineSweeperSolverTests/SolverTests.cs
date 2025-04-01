@@ -10,8 +10,11 @@ namespace MineSweeperSolver.Tests {
   [TestClass()]
   public class SolverTests {
     [TestMethod()]
-    public void SolveTest() {
-      Assert.Fail();
+    public void TwoByTwoGridOneMineSolveTest() {
+      Solver solver = new();
+      string input = ".*\r\n..";
+      string expectedOutput = "1*\r\n11";
+      Assert.AreEqual(expectedOutput, solver.Solve(input));
     }
   }
 }
