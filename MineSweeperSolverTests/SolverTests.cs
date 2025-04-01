@@ -26,7 +26,7 @@ namespace MineSweeperSolver.Tests {
     [DataTestMethod]
     [DataRow(".*\n..", "1*\n11")]
     [DataRow(".*\n.*", "2*\n2*")]
-    [DataRow(".*.**.\n....*.\n..*...", "1*2**1\n1234*2\n01*211")]
+    [DataRow(".*.**.\n....*.\n..*...", "1*2**2\n1234*2\n01*211")]
     public void SolveTest(string grid, string expectedOutput) {
       Solver solver = new();
       Assert.AreEqual(expectedOutput, solver.Solve(grid));

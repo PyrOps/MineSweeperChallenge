@@ -13,11 +13,12 @@ namespace MineSweeperSolver {
       //Solution for test #2
       //return grid.Equals(".*\r\n..") ? "1*\r\n11" : "2*\r\n2*";
       //Solution to pass all 3 tests
+      /*
       if (grid.Length > 6)
         return "1*2**1\n1234*2\n01*211";
       else
         return grid.Equals(".*\n..") ? "1*\n11" : "2*\n2*";
-      /*
+      */
       string[] input = grid.Split(['\n'], StringSplitOptions.RemoveEmptyEntries);
       string[] output = new string[input.Length];
       for (int row = 0; row < input.Length; row++)
@@ -35,7 +36,6 @@ namespace MineSweeperSolver {
               output[row + 1] = UpdateRow(output[row + 1], 1, col);
           }
       return string.Join("\n", output);
-      */
     }
 
     public bool CharIsDot(char c) {
@@ -43,7 +43,7 @@ namespace MineSweeperSolver {
     }
 
     public string UpdateRow(string row, int rowOffset, int colIndex) {
-      StringBuilder stringBuilder = new StringBuilder();
+      StringBuilder stringBuilder = new();
       for (int i = 0; i < row.Length; i++) {
         if (rowOffset == 0) {
           if (row[i] != '*' && (i == colIndex - 1 || i == colIndex + 1))
