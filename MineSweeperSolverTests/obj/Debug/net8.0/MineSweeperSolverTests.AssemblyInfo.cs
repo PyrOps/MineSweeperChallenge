@@ -11,12 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("MineSweeperSolver")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("MineSweeperSolverTests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6651e709e9cd519af4e545c1b87b007ba06b6580")]
-[assembly: System.Reflection.AssemblyProductAttribute("MineSweeperSolver")]
-[assembly: System.Reflection.AssemblyTitleAttribute("MineSweeperSolver")]
+[assembly: System.Reflection.AssemblyProductAttribute("MineSweeperSolverTests")]
+[assembly: System.Reflection.AssemblyTitleAttribute("MineSweeperSolverTests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Généré par la classe MSBuild WriteCodeFragment.

@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MineSweeperSolver", "MineSweeperSolver\MineSweeperSolver.csproj", "{0B6C1DAD-E4A2-4C35-AB73-DF377AC1FBDE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MineSweeperSolverTests", "MineSweeperSolverTests\MineSweeperSolverTests.csproj", "{14399FAB-60C6-451A-BF7B-539515C4B7CA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{0B6C1DAD-E4A2-4C35-AB73-DF377AC1FBDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0B6C1DAD-E4A2-4C35-AB73-DF377AC1FBDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0B6C1DAD-E4A2-4C35-AB73-DF377AC1FBDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14399FAB-60C6-451A-BF7B-539515C4B7CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14399FAB-60C6-451A-BF7B-539515C4B7CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14399FAB-60C6-451A-BF7B-539515C4B7CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14399FAB-60C6-451A-BF7B-539515C4B7CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
