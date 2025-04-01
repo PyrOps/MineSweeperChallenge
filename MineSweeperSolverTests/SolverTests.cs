@@ -42,12 +42,12 @@ namespace MineSweeperSolver.Tests {
     }
 
     [DataTestMethod]
-    [DataRow("01*10", 2, "02*20")]
-    [DataRow("01**4", 0, "02**4")]
-    [DataRow("01**4", 1, "11**4")]
-    public void UpdateRow(string row, int colIndex, string expectedResult) {
+    [DataRow("01*10", -1, 2, "02*20")]
+    [DataRow("01**4", 0, 0, "02**4")]
+    [DataRow("01**4", 1, 1, "12**4")]
+    public void UpdateRow(string row, int rowOffset, int colIndex, string expectedResult) {
       Solver solver = new();
-      Assert.AreEqual(expectedResult, solver.UpdateRow(row, colIndex));
+      Assert.AreEqual(expectedResult, solver.UpdateRow(row, rowOffset, colIndex));
     }
   }
 }

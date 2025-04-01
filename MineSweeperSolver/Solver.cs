@@ -29,10 +29,10 @@ namespace MineSweeperSolver {
             continue;
           else {
             if ((row - 1) > 0)
-              output[row - 1] = UpdateRow(output[row - 1], col);
-            output[row] = UpdateRow(output[row], col);
+              output[row - 1] = UpdateRow(output[row - 1], -1, col);
+            output[row] = UpdateRow(output[row], 0, col);
             if ((row + 1) < input.Length)
-              output[row + 1] = UpdateRow(output[row + 1], col);
+              output[row + 1] = UpdateRow(output[row + 1], 1, col);
           }
       return string.Join("\n", output);
       */
@@ -42,8 +42,10 @@ namespace MineSweeperSolver {
       return c == '.';
     }
 
-    public string UpdateRow(string row, int colIndex) {
-      throw new NotImplementedException();
+    public string UpdateRow(string row, int rowOffset, int colIndex) {
+      StringBuilder stringBuilder = new StringBuilder();
+      for (int i = 0; i < row.Length; i++) {
+      }
     }
   }
 }
