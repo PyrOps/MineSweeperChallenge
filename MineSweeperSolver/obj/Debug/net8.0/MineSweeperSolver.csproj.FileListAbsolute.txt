@@ -1,0 +1,15 @@
+C:\Users\Pierre-Yves\source\repos\MineSweeperChallenge\MineSweeperSolver\bin\Debug\net8.0\MineSweeperSolver.exe
+C:\Users\Pierre-Yves\source\repos\MineSweeperChallenge\MineSweeperSolver\bin\Debug\net8.0\MineSweeperSolver.deps.json
+C:\Users\Pierre-Yves\source\repos\MineSweeperChallenge\MineSweeperSolver\bin\Debug\net8.0\MineSweeperSolver.runtimeconfig.json
+C:\Users\Pierre-Yves\source\repos\MineSweeperChallenge\MineSweeperSolver\bin\Debug\net8.0\MineSweeperSolver.dll
+C:\Users\Pierre-Yves\source\repos\MineSweeperChallenge\MineSweeperSolver\bin\Debug\net8.0\MineSweeperSolver.pdb
+C:\Users\Pierre-Yves\source\repos\MineSweeperChallenge\MineSweeperSolver\obj\Debug\net8.0\MineSweeperSolver.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pierre-Yves\source\repos\MineSweeperChallenge\MineSweeperSolver\obj\Debug\net8.0\MineSweeperSolver.AssemblyInfoInputs.cache
+C:\Users\Pierre-Yves\source\repos\MineSweeperChallenge\MineSweeperSolver\obj\Debug\net8.0\MineSweeperSolver.AssemblyInfo.cs
+C:\Users\Pierre-Yves\source\repos\MineSweeperChallenge\MineSweeperSolver\obj\Debug\net8.0\MineSweeperSolver.csproj.CoreCompileInputs.cache
+C:\Users\Pierre-Yves\source\repos\MineSweeperChallenge\MineSweeperSolver\obj\Debug\net8.0\MineSweeperSolver.sourcelink.json
+C:\Users\Pierre-Yves\source\repos\MineSweeperChallenge\MineSweeperSolver\obj\Debug\net8.0\MineSweeperSolver.dll
+C:\Users\Pierre-Yves\source\repos\MineSweeperChallenge\MineSweeperSolver\obj\Debug\net8.0\refint\MineSweeperSolver.dll
+C:\Users\Pierre-Yves\source\repos\MineSweeperChallenge\MineSweeperSolver\obj\Debug\net8.0\MineSweeperSolver.pdb
+C:\Users\Pierre-Yves\source\repos\MineSweeperChallenge\MineSweeperSolver\obj\Debug\net8.0\MineSweeperSolver.genruntimeconfig.cache
+C:\Users\Pierre-Yves\source\repos\MineSweeperChallenge\MineSweeperSolver\obj\Debug\net8.0\ref\MineSweeperSolver.dll

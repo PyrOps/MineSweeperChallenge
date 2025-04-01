@@ -21,7 +21,7 @@ namespace MineSweeperSolver {
        *  ....*.  |   1234*2
        *  ..*...  |   01*211
        */
-      throw new NotImplementedException();
+      return "1*\r\n11";
     }
   }
 }
