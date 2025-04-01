@@ -28,7 +28,7 @@ namespace MineSweeperSolver {
           if (CharIsDot(input[row][col]))
             continue;
           else {
-            if ((row - 1) > 0)
+            if ((row - 1) >= 0)
               output[row - 1] = UpdateRow(output[row - 1], -1, col);
             output[row] = UpdateRow(output[row], 0, col);
             if ((row + 1) < input.Length)
@@ -45,7 +45,19 @@ namespace MineSweeperSolver {
     public string UpdateRow(string row, int rowOffset, int colIndex) {
       StringBuilder stringBuilder = new StringBuilder();
       for (int i = 0; i < row.Length; i++) {
+        if (rowOffset == 0) {
+          if (row[i] != '*' && (i == colIndex - 1 || i == colIndex + 1))
+            stringBuilder.Append((char)(row[i] + 1));
+          else
+            stringBuilder.Append(row[i]);
+        } else {
+          if (row[i] != '*' && (i == colIndex - 1 || i == colIndex || i == colIndex + 1))
+            stringBuilder.Append((char)(row[i] + 1));
+          else
+            stringBuilder.Append(row[i]);
+        }
       }
+      return stringBuilder.ToString();
     }
   }
 }
