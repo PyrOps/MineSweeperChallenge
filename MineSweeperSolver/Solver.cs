@@ -12,6 +12,9 @@ namespace MineSweeperSolver {
        *  .*      |   1*
        *  ..      |   11
        * 
+       *  input   |   expected output
+       *  .*      |   2*
+       *  .*      |   2*
        */
       throw new NotImplementedException();
     }
