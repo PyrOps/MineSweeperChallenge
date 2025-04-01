@@ -40,14 +40,5 @@ namespace MineSweeperSolver.Tests {
       Solver solver = new();
       Assert.AreEqual(expectedResult, solver.CharIsDot(grid[0]));
     }
-
-    [DataTestMethod]
-    [DataRow(".*\n..", 2)]
-    [DataRow("*.\n.*", 2)]
-    [DataRow(".*.**.\n....*.\n..*...", 3)]
-    public void CountNbLinesTest(string grid, int expectedResult) {
-      Solver solver = new();
-      Assert.AreEqual(expectedResult, solver.CountNbLines(grid));
-    }
   }
 }

@@ -21,9 +21,5 @@ namespace MineSweeperSolver {
     public bool CharIsDot(char c) {
       return c == '.';
     }
-
-    public int CountNbLines(string grid) {
-      return grid.Split(['\n'], StringSplitOptions.RemoveEmptyEntries).Length;
-    }
   }
 }
