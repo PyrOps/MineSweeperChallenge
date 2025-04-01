@@ -46,5 +46,13 @@ namespace MineSweeperSolver.Tests {
       string expectedOutput = "1*2**1\r\n1234*2\r\n01*211";
       Assert.AreEqual(expectedOutput, solver.Solve(input));
     }
+
+    [TestMethod()]
+    public void CharIsDotTest() {
+      Solver solver = new();
+      string input = ".*.**.\r\n....*.\r\n..*...";
+      bool expectedOutput = true;
+      Assert.Equals(expectedOutput, solver.CharIsDot(input[0]));
+    }
   }
 }

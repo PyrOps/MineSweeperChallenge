@@ -17,5 +17,9 @@ namespace MineSweeperSolver {
       else
         return grid.Equals(".*\r\n..") ? "1*\r\n11" : "2*\r\n2*";
     }
+
+    public bool CharIsDot(char c) {
+      throw new NotImplementedException();
+    }
   }
 }
