@@ -23,7 +23,7 @@ namespace MineSweeperSolver {
     }
 
     public int CountNbLines(string grid) {
-      return grid.Split(new char[] { '\n' }, StringSplitOptions.RemoveEmptyEntries).Length;
+      return grid.Split(['\n'], StringSplitOptions.RemoveEmptyEntries).Length;
     }
   }
 }
