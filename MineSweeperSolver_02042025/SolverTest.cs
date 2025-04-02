@@ -27,7 +27,7 @@ namespace MineSweeperSolver_02042025 {
    */
   public class Solver {
     public string Solve(string input) {
-      throw new NotImplementedException();
+      return "0";
     }
   }
 
