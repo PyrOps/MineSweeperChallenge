@@ -46,6 +46,7 @@ namespace MineSweeperSolver_02042025 {
     [DataRow(".", "0")]
     [DataRow("*", "*")]
     [DataRow("..", "00")]
+    [DataRow(".*", "1*")]
     public void SolveTest(string input, string expectedOutput) {
       Solver solver = new Solver();
       Assert.AreEqual(expectedOutput, solver.Solve(input));
