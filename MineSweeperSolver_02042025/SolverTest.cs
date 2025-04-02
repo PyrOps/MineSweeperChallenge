@@ -7,6 +7,8 @@
 /*                                          */
 /********************************************/
 
+using System.Text;
+
 namespace MineSweeperSolver_02042025 {
   /*
    * Examples :
@@ -27,11 +29,14 @@ namespace MineSweeperSolver_02042025 {
    */
   public class Solver {
     public string Solve(string input) {
-      if (input.Equals(".."))
-        return "00";
-      if (input.Equals("*"))
-        return "*";
-      return "0";
+      StringBuilder sb = new();
+      foreach (char c in input) {
+        if (c == '*')
+          sb.Append("*");
+        else
+          sb.Append("0");
+      }
+      return sb.ToString();
     }
   }
 
