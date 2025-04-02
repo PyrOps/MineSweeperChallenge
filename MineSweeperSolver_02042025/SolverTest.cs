@@ -25,10 +25,19 @@ namespace MineSweeperSolver_02042025 {
    * in : "**."         | out : "**1"
    * in : "***"         | out : "***"
    */
-  public class  Solver {
+  public class Solver {
+    public string Solve(string input) {
+      throw new NotImplementedException();
+    }
   }
 
   [TestClass]
   public sealed class SolverTest {
+    [DataTestMethod]
+    [DataRow(".", "0")]
+    public void SolveTest(string input, string expectedOutput) {
+      Solver solver = new Solver();
+      Assert.AreEqual(expectedOutput, solver.Solve(input));
+    }
   }
 }
