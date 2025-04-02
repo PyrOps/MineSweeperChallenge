@@ -3,3 +3,5 @@
 ################################################################################
 
 /.vs
+/MineSweeperSolver/MineSweeperSolver.csproj
+/MineSweeperSolverTests/MineSweeperSolverTests.csproj
