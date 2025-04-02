@@ -12,7 +12,7 @@ namespace MineSweeperSolver_02042025 {
    * Examples :
    * in : "."           | out : "0"
    * in : "*"           | out : "*"
-   * in : ".."          | out : ".."
+   * in : ".."          | out : "00"
    * in : ".*"          | out : "1*"
    * in : "**"          | out : "**"
    * in : "*."          | out : "*1"
@@ -38,6 +38,7 @@ namespace MineSweeperSolver_02042025 {
     [DataTestMethod]
     [DataRow(".", "0")]
     [DataRow("*", "*")]
+    [DataRow("..", "00")]
     public void SolveTest(string input, string expectedOutput) {
       Solver solver = new Solver();
       Assert.AreEqual(expectedOutput, solver.Solve(input));
