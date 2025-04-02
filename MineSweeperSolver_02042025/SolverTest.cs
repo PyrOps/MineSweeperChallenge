@@ -35,6 +35,7 @@ namespace MineSweeperSolver_02042025 {
   public sealed class SolverTest {
     [DataTestMethod]
     [DataRow(".", "0")]
+    [DataRow("*", "*")]
     public void SolveTest(string input, string expectedOutput) {
       Solver solver = new Solver();
       Assert.AreEqual(expectedOutput, solver.Solve(input));
