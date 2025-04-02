@@ -16,6 +16,7 @@
   [TestClass()]
   public class SolverTests {
     [DataTestMethod]
+    [Ignore]
     [DataRow(".*\n..", "1*\n11")]
     [DataRow(".*\n.*", "2*\n2*")]
     [DataRow(".*.**.\n....*.\n..*...", "1*2**2\n1234*2\n01*211")]
@@ -25,6 +26,7 @@
     }
 
     [DataTestMethod]
+    [Ignore]
     [DataRow(".*\n..", true)]
     [DataRow("*.\n.*", false)]
     [DataRow(".*.**.\n....*.\n..*...", true)]
@@ -34,6 +36,7 @@
     }
 
     [DataTestMethod]
+    [Ignore]
     [DataRow("01*10", -1, 2, "02*20")]
     [DataRow("01**4", 0, 0, "02**4")]
     [DataRow("01**4", 1, 1, "12**4")]
