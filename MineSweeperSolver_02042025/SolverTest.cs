@@ -34,9 +34,9 @@ namespace MineSweeperSolver_02042025 {
         if (input[i] == '*')
           sb.Append('*');
         else {
-          if ((i + 1) < input.Length && NextCharIsBomb(input[i + 1]))
+          if ((i + 1) < input.Length && AdjacentCharIsBomb(input[i + 1]))
             sb.Append('1');
-          else if ((i - 1) >= 0 && PreviousCharIsBomb(input[i - 1]))
+          else if ((i - 1) >= 0 && AdjacentCharIsBomb(input[i - 1]))
             sb.Append('1');
           else
             sb.Append('0');
@@ -45,11 +45,7 @@ namespace MineSweeperSolver_02042025 {
       return sb.ToString();
     }
 
-    private bool NextCharIsBomb(char c) {
-      return c == '*';
-    }
-
-    private bool PreviousCharIsBomb(char c) {
+    private bool AdjacentCharIsBomb(char c) {
       return c == '*';
     }
   }
