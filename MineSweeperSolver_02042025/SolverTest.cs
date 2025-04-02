@@ -16,8 +16,8 @@ namespace MineSweeperSolver_02042025 {
    * in : "*"           | out : "*"
    * in : ".."          | out : "00"
    * in : ".*"          | out : "1*"
-   * in : "**"          | out : "**"
    * in : "*."          | out : "*1"
+   * in : "**"          | out : "**"
    * in : "..."         | out : "000"
    * in : "..*"         | out : "01*"
    * in : ".*."         | out : "1*1"
@@ -34,7 +34,7 @@ namespace MineSweeperSolver_02042025 {
         if (input[i] == '*')
           sb.Append('*');
         else {
-          if ((i+ 1) < input.Length && NextCharIsBomb(input[i + 1]))
+          if ((i + 1) < input.Length && NextCharIsBomb(input[i + 1]))
             sb.Append('1');
           else
             sb.Append('0');
@@ -55,6 +55,7 @@ namespace MineSweeperSolver_02042025 {
     [DataRow("*", "*")]
     [DataRow("..", "00")]
     [DataRow(".*", "1*")]
+    [DataRow("*.", "*1")]
     public void SolveTest(string input, string expectedOutput) {
       Solver solver = new Solver();
       Assert.AreEqual(expectedOutput, solver.Solve(input));
