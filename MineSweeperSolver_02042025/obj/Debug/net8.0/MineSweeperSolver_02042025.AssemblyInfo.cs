@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MineSweeperSolver_02042025")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bcb1a82f1dbb05af20fc93e1e3f72f12b784ac17")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+17c07343e106041ec678958e671846e72192bb25")]
 [assembly: System.Reflection.AssemblyProductAttribute("MineSweeperSolver_02042025")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MineSweeperSolver_02042025")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

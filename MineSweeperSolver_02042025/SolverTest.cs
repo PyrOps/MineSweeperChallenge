@@ -30,13 +30,21 @@ namespace MineSweeperSolver_02042025 {
   public class Solver {
     public string Solve(string input) {
       StringBuilder sb = new();
-      foreach (char c in input) {
-        if (c == '*')
+      for (int i = 0; i < input.Length; i++) {
+        if (input[i] == '*')
           sb.Append('*');
-        else
-          sb.Append('0');
+        else {
+          if ((i+ 1) < input.Length && NextCharIsBomb(input[i + 1]))
+            sb.Append('1');
+          else
+            sb.Append('0');
+        }
       }
       return sb.ToString();
+    }
+
+    private bool NextCharIsBomb(char c) {
+      return c == '*';
     }
   }
 
