@@ -32,9 +32,9 @@ namespace MineSweeperSolver_02042025 {
       StringBuilder sb = new();
       foreach (char c in input) {
         if (c == '*')
-          sb.Append("*");
+          sb.Append('*');
         else
-          sb.Append("0");
+          sb.Append('0');
       }
       return sb.ToString();
     }
