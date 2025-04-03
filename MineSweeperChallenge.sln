@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MineSweeperSolverTests", "M
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MineSweeperSolver_02042025", "MineSweeperSolver_02042025\MineSweeperSolver_02042025.csproj", "{FCF571B4-2E28-42A7-B993-667DDE279AF1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MineSweeperSolverTest_20250403", "MineSweeperSolverTest_20250403\MineSweeperSolverTest_20250403.csproj", "{77EC7366-CC83-48D2-9EDE-7E08C15A5DEF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{FCF571B4-2E28-42A7-B993-667DDE279AF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FCF571B4-2E28-42A7-B993-667DDE279AF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FCF571B4-2E28-42A7-B993-667DDE279AF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77EC7366-CC83-48D2-9EDE-7E08C15A5DEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77EC7366-CC83-48D2-9EDE-7E08C15A5DEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77EC7366-CC83-48D2-9EDE-7E08C15A5DEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77EC7366-CC83-48D2-9EDE-7E08C15A5DEF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
