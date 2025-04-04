@@ -1658,11 +1658,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Pierre-Yves\\source\\repos\\MineSweeperChallenge\\MineSweeperSolverTests\\MineSweeperSolverTests.csproj",
-      "projectName": "MineSweeperSolverTests",
-      "projectPath": "C:\\Users\\Pierre-Yves\\source\\repos\\MineSweeperChallenge\\MineSweeperSolverTests\\MineSweeperSolverTests.csproj",
+      "projectUniqueName": "C:\\Users\\Pierre-Yves\\source\\repos\\MineSweeperChallenge\\MineSweeperSolverTest_20250404\\MineSweeperSolverTest_20250404.csproj",
+      "projectName": "MineSweeperSolverTest_20250404",
+      "projectPath": "C:\\Users\\Pierre-Yves\\source\\repos\\MineSweeperChallenge\\MineSweeperSolverTest_20250404\\MineSweeperSolverTest_20250404.csproj",
       "packagesPath": "C:\\Users\\Pierre-Yves\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Pierre-Yves\\source\\repos\\MineSweeperChallenge\\MineSweeperSolverTests\\obj\\",
+      "outputPath": "C:\\Users\\Pierre-Yves\\source\\repos\\MineSweeperChallenge\\MineSweeperSolverTest_20250404\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

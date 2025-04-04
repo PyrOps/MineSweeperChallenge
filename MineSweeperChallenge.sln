@@ -3,13 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MineSweeperSolver", "MineSweeperSolver\MineSweeperSolver.csproj", "{0B6C1DAD-E4A2-4C35-AB73-DF377AC1FBDE}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MineSweeperSolverTests", "MineSweeperSolverTests\MineSweeperSolverTests.csproj", "{14399FAB-60C6-451A-BF7B-539515C4B7CA}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MineSweeperSolver_02042025", "MineSweeperSolver_02042025\MineSweeperSolver_02042025.csproj", "{FCF571B4-2E28-42A7-B993-667DDE279AF1}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MineSweeperSolverTest_20250403", "MineSweeperSolverTest_20250403\MineSweeperSolverTest_20250403.csproj", "{77EC7366-CC83-48D2-9EDE-7E08C15A5DEF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MineSweeperSolverTest_20250404", "MineSweeperSolverTest_20250404\MineSweeperSolverTest_20250404.csproj", "{873A3948-13F9-46E3-8848-4A7DEE4C061D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,22 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{0B6C1DAD-E4A2-4C35-AB73-DF377AC1FBDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0B6C1DAD-E4A2-4C35-AB73-DF377AC1FBDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0B6C1DAD-E4A2-4C35-AB73-DF377AC1FBDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0B6C1DAD-E4A2-4C35-AB73-DF377AC1FBDE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{14399FAB-60C6-451A-BF7B-539515C4B7CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{14399FAB-60C6-451A-BF7B-539515C4B7CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{14399FAB-60C6-451A-BF7B-539515C4B7CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{14399FAB-60C6-451A-BF7B-539515C4B7CA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FCF571B4-2E28-42A7-B993-667DDE279AF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FCF571B4-2E28-42A7-B993-667DDE279AF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FCF571B4-2E28-42A7-B993-667DDE279AF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FCF571B4-2E28-42A7-B993-667DDE279AF1}.Release|Any CPU.Build.0 = Release|Any CPU
 		{77EC7366-CC83-48D2-9EDE-7E08C15A5DEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{77EC7366-CC83-48D2-9EDE-7E08C15A5DEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{77EC7366-CC83-48D2-9EDE-7E08C15A5DEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{77EC7366-CC83-48D2-9EDE-7E08C15A5DEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{873A3948-13F9-46E3-8848-4A7DEE4C061D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{873A3948-13F9-46E3-8848-4A7DEE4C061D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{873A3948-13F9-46E3-8848-4A7DEE4C061D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{873A3948-13F9-46E3-8848-4A7DEE4C061D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
