@@ -111,6 +111,9 @@
  * in : "***\n***"      | out : "***\n***"
 */
 
+using System.Text;
+using System.Threading.Tasks.Dataflow;
+
 namespace MineSweeperSolverTest_20250404 {
   [TestClass]
   public sealed class SolverTest {
@@ -139,39 +142,66 @@ namespace MineSweeperSolverTest_20250404 {
 
   public class Solver {
     public string Solve(string input) {
-      char[] output = input.Replace(".", "0").ToCharArray();
+      Grid grid = new(input);
       int lineLength = input.Split('\n')[0].Length;
       int i = -1;
-      while (++i < output.Length) {
-        if (CellContainsBomb(output[i])) {
+      while (++i < grid.Cells.Length) {
+        if (grid.Cells[i].IsBomb()) {
           if (i > lineLength) {
             int j = i - lineLength - 1;
-              if (!CellContainsBomb(output[j]))
-                IncreaseCellBombCount(ref output[j]);
+            if (!grid.Cells[j].IsBomb())
+              grid.Cells[j].IncreaseValue();
           }
           if (i > 0) {
-            if (!CellContainsBomb(output[i - 1]) && !CellContainsNewLine(output[i - 1]))
-              IncreaseCellBombCount(ref output[i - 1]);
+            if (!grid.Cells[i - 1].IsBomb() && !grid.Cells[i - 1].IsNewLine())
+              grid.Cells[i - 1].IncreaseValue();
           }
-          if (i < output.Length - 1) {
-            if (!CellContainsBomb(output[i + 1]) && !CellContainsNewLine(output[i + 1]))
-              IncreaseCellBombCount(ref output[i + 1]);
+          if (i < grid.Cells.Length - 1) {
+            if (!grid.Cells[i + 1].IsBomb() && !grid.Cells[i + 1].IsNewLine())
+              grid.Cells[i + 1].IncreaseValue();
           }
         }
       }
-      return new string(output);
+      return grid.FormatOutput();
+    }
+  }
+
+  public class Grid {
+    public Cell[] Cells { get; }
+
+    public Grid(string input) {
+      Cells = new Cell[input.Length];
+      int i = -1;
+      while (++i < input.Length) {
+        Cells[i] = new Cell(input[i].Equals('.') ? '0' : input[i]);
+      }
     }
 
-    private bool CellContainsBomb(char cell) {
-      return cell == '*';
+    public string FormatOutput() {
+      StringBuilder sb = new();
+      foreach (Cell cell in Cells)
+        sb.Append(cell.GetValue());
+      return sb.ToString();
+    }
+  }
+
+  public class Cell(char value) {
+    private char value = value;
+
+    public bool IsBomb() {
+      return value == '*';
     }
 
-    private bool CellContainsNewLine(char cell) {
-      return cell == '\n';
+    public bool IsNewLine() {
+      return value == '\n';
     }
 
-    private void IncreaseCellBombCount(ref char cell) {
-      cell++;
+    public void IncreaseValue() {
+      value++;
+    }
+
+    public char GetValue() {
+      return value;
     }
   }
 }
