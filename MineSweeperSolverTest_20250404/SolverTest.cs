@@ -152,8 +152,10 @@ namespace MineSweeperSolverTest_20250404 {
         if (grid.Cells[i].IsBomb()) {
           if (i > grid.LineLength) {
             int j = i - grid.LineLength - 1;
-            if (!grid.Cells[j - 1].IsBomb())
-              grid.Cells[j - 1].IncreaseValue();
+            if (j > 0) {
+              if (!grid.Cells[j - 1].IsBomb())
+                grid.Cells[j - 1].IncreaseValue();
+            }
             if (!grid.Cells[j].IsBomb())
               grid.Cells[j].IncreaseValue();
           }
