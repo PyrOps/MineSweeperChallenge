@@ -134,6 +134,9 @@ namespace MineSweeperSolverTest_20250404 {
         if (i > 0 && CellContainsBomb(output[i])) {
           IncreaseCellBombCount(ref output[i - 1]);
         }
+        if (i < output.Length - 1 && CellContainsBomb(output[i])) {
+          IncreaseCellBombCount(ref output[i + 1]);
+        }
       }
       return new string(output);
     }
