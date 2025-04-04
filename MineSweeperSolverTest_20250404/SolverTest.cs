@@ -126,11 +126,8 @@ namespace MineSweeperSolverTest_20250404 {
 
   public class Solver {
     public string Solve(string input) {
-      if (input == "..")
-        return "00";
-      if (input == "*")
-        return "*";
-      return "0";
+      string output = input.Replace(".", "0");
+      return output;
     }
   }
 }
