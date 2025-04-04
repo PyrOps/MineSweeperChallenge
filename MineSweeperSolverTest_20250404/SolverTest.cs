@@ -141,15 +141,11 @@ namespace MineSweeperSolverTest_20250404 {
       while (++i < output.Length) {
         if (CellContainsBomb(output[i])) {
           if (i > 0) {
-            if (CellContainsBomb(output[i - 1]))
-              continue;
-            else
+            if (!CellContainsBomb(output[i - 1]))
               IncreaseCellBombCount(ref output[i - 1]);
           }
           if (i < output.Length - 1) {
-            if (CellContainsBomb(output[i + 1]))
-              continue;
-            else
+            if (!CellContainsBomb(output[i + 1]))
               IncreaseCellBombCount(ref output[i + 1]);
           }
         }
