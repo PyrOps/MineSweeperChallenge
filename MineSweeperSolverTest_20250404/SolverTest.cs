@@ -127,10 +127,14 @@ namespace MineSweeperSolverTest_20250404 {
 
   public class Solver {
     public string Solve(string input) {
-      if (input.Equals(".*"))
-        return "1*";
-      string output = input.Replace(".", "0");
-      return output;
+      char[] output = input.Replace(".", "0").ToCharArray();
+      int i = -1;
+      while (++i < output.Length) {
+        if (i > 0 && output[i] == '*') {
+          output[i - 1] = '1';
+        }
+      }
+      return new string(output);
     }
   }
 }
