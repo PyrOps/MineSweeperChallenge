@@ -143,12 +143,11 @@ namespace MineSweeperSolverTest_20250404 {
   public class Solver {
     public string Solve(string input) {
       Grid grid = new(input);
-      int lineLength = input.Split('\n')[0].Length;
       int i = -1;
       while (++i < grid.Cells.Length) {
         if (grid.Cells[i].IsBomb()) {
-          if (i > lineLength) {
-            int j = i - lineLength - 1;
+          if (i > grid.LineLength) {
+            int j = i - grid.LineLength - 1;
             if (!grid.Cells[j].IsBomb())
               grid.Cells[j].IncreaseValue();
           }
@@ -168,6 +167,7 @@ namespace MineSweeperSolverTest_20250404 {
 
   public class Grid {
     public Cell[] Cells { get; }
+    public int LineLength { get; }
 
     public Grid(string input) {
       Cells = new Cell[input.Length];
@@ -175,6 +175,7 @@ namespace MineSweeperSolverTest_20250404 {
       while (++i < input.Length) {
         Cells[i] = new Cell(input[i].Equals('.') ? '0' : input[i]);
       }
+      LineLength = input.Split('\n')[0].Length;
     }
 
     public string FormatOutput() {
@@ -189,11 +190,11 @@ namespace MineSweeperSolverTest_20250404 {
     private char value = value;
 
     public bool IsBomb() {
-      return value == '*';
+      return value.Equals('*');
     }
 
     public bool IsNewLine() {
-      return value == '\n';
+      return value.Equals('\n');
     }
 
     public void IncreaseValue() {
