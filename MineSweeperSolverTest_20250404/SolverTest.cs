@@ -115,7 +115,16 @@ namespace MineSweeperSolverTest_20250404 {
   [TestClass]
   public sealed class SolverTest {
     [DataTestMethod]
-    public void SolveTest() {
+    [DataRow(".", "0")]
+    public void SolveTest(string input, string expectedOutput) {
+      Solver solver = new();
+      Assert.AreEqual(expectedOutput, solver.Solve(input));
+    }
+  }
+
+  public class Solver {
+    public string Solve(string input) {
+      throw new NotImplementedException();
     }
   }
 }
