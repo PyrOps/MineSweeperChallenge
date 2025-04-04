@@ -131,11 +131,11 @@ namespace MineSweeperSolverTest_20250404 {
       char[] output = input.Replace(".", "0").ToCharArray();
       int i = -1;
       while (++i < output.Length) {
-        if (i > 0 && CellContainsBomb(output[i])) {
-          IncreaseCellBombCount(ref output[i - 1]);
-        }
-        if (i < output.Length - 1 && CellContainsBomb(output[i])) {
-          IncreaseCellBombCount(ref output[i + 1]);
+        if (CellContainsBomb(output[i])) {
+          if (i > 0)
+            IncreaseCellBombCount(ref output[i - 1]);
+          if (i < output.Length - 1)
+            IncreaseCellBombCount(ref output[i + 1]);
         }
       }
       return new string(output);
