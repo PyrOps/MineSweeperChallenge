@@ -131,14 +131,18 @@ namespace MineSweeperSolverTest_20250404 {
       int i = -1;
       while (++i < output.Length) {
         if (i > 0 && IsBomb(output[i])) {
-          output[i - 1] = '1';
+          IncreaseBombCount(ref output[i - 1]);
         }
       }
       return new string(output);
     }
 
-    private bool IsBomb(char c) {
-      return c == '*';
+    private bool IsBomb(char cell) {
+      return cell == '*';
+    }
+
+    private void IncreaseBombCount(ref char cell) {
+      cell++;
     }
   }
 }
