@@ -130,18 +130,18 @@ namespace MineSweeperSolverTest_20250404 {
       char[] output = input.Replace(".", "0").ToCharArray();
       int i = -1;
       while (++i < output.Length) {
-        if (i > 0 && IsBomb(output[i])) {
-          IncreaseBombCount(ref output[i - 1]);
+        if (i > 0 && CellContainsBomb(output[i])) {
+          IncreaseCellBombCount(ref output[i - 1]);
         }
       }
       return new string(output);
     }
 
-    private bool IsBomb(char cell) {
+    private bool CellContainsBomb(char cell) {
       return cell == '*';
     }
 
-    private void IncreaseBombCount(ref char cell) {
+    private void IncreaseCellBombCount(ref char cell) {
       cell++;
     }
   }
