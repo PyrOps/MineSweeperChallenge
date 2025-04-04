@@ -140,15 +140,21 @@ namespace MineSweeperSolverTest_20250404 {
   public class Solver {
     public string Solve(string input) {
       char[] output = input.Replace(".", "0").ToCharArray();
+      int lineLength = input.Split('\n')[0].Length;
       int i = -1;
       while (++i < output.Length) {
         if (CellContainsBomb(output[i])) {
+          if (i > lineLength) {
+            int j = i - (i/lineLength);
+              if (!CellContainsBomb(output[j]))
+                IncreaseCellBombCount(ref output[j]);
+          }
           if (i > 0) {
-            if (!CellContainsBomb(output[i - 1]))
+            if (!CellContainsBomb(output[i - 1]) && !CellContainsNewLine(output[i - 1]))
               IncreaseCellBombCount(ref output[i - 1]);
           }
           if (i < output.Length - 1) {
-            if (!CellContainsBomb(output[i + 1]))
+            if (!CellContainsBomb(output[i + 1]) && !CellContainsNewLine(output[i + 1]))
               IncreaseCellBombCount(ref output[i + 1]);
           }
         }
@@ -158,6 +164,10 @@ namespace MineSweeperSolverTest_20250404 {
 
     private bool CellContainsBomb(char cell) {
       return cell == '*';
+    }
+
+    private bool CellContainsNewLine(char cell) {
+      return cell == '\n';
     }
 
     private void IncreaseCellBombCount(ref char cell) {
