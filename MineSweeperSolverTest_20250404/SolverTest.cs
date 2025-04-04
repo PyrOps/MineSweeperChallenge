@@ -145,7 +145,7 @@ namespace MineSweeperSolverTest_20250404 {
       while (++i < output.Length) {
         if (CellContainsBomb(output[i])) {
           if (i > lineLength) {
-            int j = i - (i/lineLength);
+            int j = i - lineLength - 1;
               if (!CellContainsBomb(output[j]))
                 IncreaseCellBombCount(ref output[j]);
           }
