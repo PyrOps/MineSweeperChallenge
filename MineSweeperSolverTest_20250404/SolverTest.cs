@@ -134,6 +134,7 @@ namespace MineSweeperSolverTest_20250404 {
     [DataRow("***", "***")]
     [DataRow(".\n.", "0\n0")]
     [DataRow(".\n*", "1\n*")]
+    [DataRow("*\n.", "*\n1")]
     public void SolveTest(string input, string expectedOutput) {
       Solver solver = new();
       Assert.AreEqual(expectedOutput, solver.Solve(input));
