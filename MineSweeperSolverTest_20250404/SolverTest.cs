@@ -130,11 +130,15 @@ namespace MineSweeperSolverTest_20250404 {
       char[] output = input.Replace(".", "0").ToCharArray();
       int i = -1;
       while (++i < output.Length) {
-        if (i > 0 && output[i] == '*') {
+        if (i > 0 && IsBomb(output[i])) {
           output[i - 1] = '1';
         }
       }
       return new string(output);
+    }
+
+    private bool IsBomb(char c) {
+      return c == '*';
     }
   }
 }
